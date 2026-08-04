@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt, dinflytting.no</title>
+<meta name="description" content="Ta kontakt med dinflytting.no for en uforpliktende prat, eller fyll ut skjemaet for et åpent tilbud på flyttingen din.">
+<meta name="theme-color" content="#3083c5">
+<link rel="icon" href="../assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="logo-link"><img src="../assets/logo.png" alt="dinflytting.no"></a>
+    <nav class="main-nav">
+      <a href="../index.html">Hjem</a>
+      <a href="../privat/">Privat</a>
+      <a href="../bedrift/">Bedrift</a>
+      <a href="../utleie-av-flyttebil/">Bilutleie</a>
+      <a href="../flyttevask/">Flyttevask</a>
+      <a href="../lagerhotell/">Lagerhotell</a>
+      <a href="../prosjekt/">Prosjekt</a>
+      <a href="../kontakt/" class="nav-cta desktop-only active">Kontakt</a>
+    </nav>
+    <button class="hamburger" aria-label="Åpne meny">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="overlay"></div>
+<div class="mobile-drawer">
+  <div class="drawer-top"><button class="drawer-close" aria-label="Lukk meny">×</button></div>
+  <a href="../index.html">Hjem</a>
+  <a href="../privat/">Privat</a>
+  <a href="../privat/tips-og-rad/" class="sub-link">Tips og råd</a>
+  <a href="../privat/spesialtransport/" class="sub-link">Spesialtransport</a>
+  <a href="../bedrift/">Bedrift</a>
+  <a href="../utleie-av-flyttebil/">Bilutleie</a>
+  <a href="../flyttevask/">Flyttevask</a>
+  <a href="../lagerhotell/">Lagerhotell</a>
+  <a href="../prosjekt/">Prosjekt</a>
+  <a href="../kontakt/" class="nav-cta">Kontakt</a>
+  <div class="drawer-contact">
+    <a href="tel:+4797109710">Ring: 9710 9710</a>
+    <a href="mailto:post@dinflytting.no">post@dinflytting.no</a>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="kicker" data-animate>Kontakt</span>
+      <h1 data-animate>Skal du flytte?</h1>
+      <p data-animate>Har du spørsmål om hva vi kan hjelpe deg med? Ta kontakt for en uforpliktende prat, eller fyll ut skjemaet under for et åpent tilbud. Vi tar kontakt med deg!</p>
+    </div>
+  </section>
+
+  <section style="padding-top:24px">
+    <div class="wrap">
+      <div class="request-grid" data-animate>
+        <div class="form-card">
+          <div class="form-success" style="display:none;background:#eaf6ee;border:1px solid #bfe3c9;color:#1a7a3d;padding:16px 18px;border-radius:12px;font-size:14px;font-weight:600;margin-bottom:24px">
+            Takk for forespørselen! Vi tar kontakt så snart vi kan.
+          </div>
+          <form class="move-request-form" action="https://formsubmit.co/post@dinflytting.no" method="POST">
+            <input type="hidden" name="_subject" value="Ny flytteforespørsel fra nettsiden">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Navn</label>
+                <input type="text" id="name" name="Navn" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefonnummer</label>
+                <input type="tel" id="phone" name="Telefon" required>
+              </div>
+              <div class="form-group full">
+                <label for="email">E-post</label>
+                <input type="email" id="email" name="E-post" required>
+              </div>
+              <div class="form-group">
+                <label for="from">Hvor skal du flytte fra?</label>
+                <input type="text" id="from" name="Flytter fra" placeholder="Adresse og etasje">
+              </div>
+              <div class="form-group">
+                <label for="to">Hvor skal du flytte til?</label>
+                <input type="text" id="to" name="Flytter til" placeholder="Adresse og etasje">
+              </div>
+              <div class="form-group">
+                <label for="date">Flytteperiode</label>
+                <input type="text" id="date" name="Flytteperiode" placeholder="Eks: 5.–10. mars">
+              </div>
+              <div class="form-group">
+                <label for="type">Privat eller bedrift?</label>
+                <select id="type" name="Type">
+                  <option>Privat</option>
+                  <option>Bedrift</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label>Ønsket tilleggstjeneste <span class="opt">(valgfritt)</span></label>
+              <div class="check-row">
+                <label class="check-pill"><input type="checkbox" name="Fleksibel flyttedato" value="Ja"> Fleksibel flyttedato</label>
+                <label class="check-pill"><input type="checkbox" name="Mellomlagring" value="Ja"> Trenger mellomlagring</label>
+                <label class="check-pill"><input type="checkbox" name="Utvask" value="Ja"> Ønsker utvask</label>
+                <label class="check-pill"><input type="checkbox" name="Forsikring" value="Ja"> Forsikre flyttelasset</label>
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label for="extra">Beskrivelse <span class="opt">(størrelse på bolig, antall kubikk, annen info)</span></label>
+              <textarea id="extra" name="Beskrivelse"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send forespørsel</button>
+            <p class="form-note">Vi svarer så raskt vi kan.</p>
+          </form>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div class="contact-card">
+            <h3>Ta kontakt direkte</h3>
+            <p class="big">
+              Tlf: <a href="tel:+4797109710">9710 9710</a><br>
+              E-post: <a href="mailto:post@dinflytting.no">post@dinflytting.no</a><br>
+              <a href="https://www.facebook.com/pg/Flytteservice-og-Bilutleie-As-533351546828526" target="_blank" rel="noopener">Følg oss på Facebook</a>
+            </p>
+          </div>
+          <div class="contact-card">
+            <h3>Våre lagre</h3>
+            <p class="big" style="font-size:14.5px">
+              Harstad: Strandåkeren 17, Kilhusveien 170, Seljestadveien 97<br><br>
+              Gardermoen/Dal: Industriveien 115, 2072 Dal
+            </p>
+          </div>
+          <div class="contact-card">
+            <h3>Anmeldelser</h3>
+            <p class="big" style="font-size:14.5px">5,0 ★ på Mitt Anbud.<br><a href="https://mittanbud.no/bedrift/1153" target="_blank" rel="noopener">Se profilen vår →</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/logo.png" alt="dinflytting.no">
+        <p>Dinflytting.no er et flyttebyrå som hjelper private og bedrifter med flytting, flyttevask, bilutleie og lagerhotell i hele Norge.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sider</h4>
+        <ul>
+          <li><a href="../index.html">Hjem</a></li>
+          <li><a href="../privat/">Privat</a></li>
+          <li><a href="../privat/tips-og-rad/">Tips og råd</a></li>
+          <li><a href="../privat/spesialtransport/">Spesialtransport</a></li>
+          <li><a href="../bedrift/">Bedrift</a></li>
+          <li><a href="../utleie-av-flyttebil/">Bilutleie</a></li>
+          <li><a href="../flyttevask/">Flyttevask</a></li>
+          <li><a href="../lagerhotell/">Lagerhotell</a></li>
+          <li><a href="../prosjekt/">Prosjekt</a></li>
+          <li><a href="../kontakt/">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+4797109710">9710 9710</a></li>
+          <li><a href="mailto:post@dinflytting.no">post@dinflytting.no</a></li>
+          <li><a href="https://www.facebook.com/pg/Flytteservice-og-Bilutleie-As-533351546828526" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://mittanbud.no/bedrift/1153" target="_blank" rel="noopener">Mitt Anbud</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Dinflytting.no. <a href="../personvernerklaering/">Personvernerklæring</a></div>
+      <div>Nettside levert av <a href="https://dmarketing.no" target="_blank" rel="noopener">Dietrichs Marketing</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>
